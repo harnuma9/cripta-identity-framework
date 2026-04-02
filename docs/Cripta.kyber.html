@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>kyber - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Cripta.html">Cripta</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-Cripta-Cripta.html">Cripta</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.toggleAirGap">toggleAirGap</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.help">help</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateCID">generateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateMentalKey">generateMentalKey</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.obfuscateCID">obfuscateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.deobfuscateCID">deobfuscateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.vaultMixCIDs">vaultMixCIDs</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.vaultUnmixCIDs">vaultUnmixCIDs</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.encapsulateCID">encapsulateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.decapsulateCID">decapsulateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.encapsulateAgreedCID">encapsulateAgreedCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.decapsulateAgreedCID">decapsulateAgreedCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateNID">generateNID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateNidQR">generateNidQR</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.recoverOtherCID">recoverOtherCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.recoverPass">recoverPass</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesEncrypt">aesEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesDecrypt">aesDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesStreamEncrypt">aesStreamEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesStreamDecrypt">aesStreamDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaEncrypt">chachaEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaDecrypt">chachaDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaStreamEncrypt">chachaStreamEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaStreamDecrypt">chachaStreamDecrypt</a></li></ul></li><li><a href="Cripta.kyber.html">kyber</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.generate">generate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.encapsulate">encapsulate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.decapsulate">decapsulate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.selfCheck">selfCheck</a></li></ul></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">kyber</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        
+            Namespace
+        
+        </h2>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+
+    
+
+    <h4 class="name" id="kyber">kyber</h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>WRAPPER KYBER (ML-KEM) IMPLEMENTATION
+Provides Post-Quantum Cryptographic (PQC) Key Encapsulation.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line2037">line 2037</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".generate"><span class="type-signature type-signature-async, static">(async, static) </span>generate<span class="signature">(size)</span><span class="type-signature"> &rarr; {Promise.&lt;{raw: {publicKey: Uint8Array, privateKey: Uint8Array}, pub: Object, priv: Object}>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Generates a new ML-KEM key pair.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line2137">line 2137</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Security level: 512 (L1), 768 (L3), or 1024 (L5).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;{raw: {publicKey: Uint8Array, privateKey: Uint8Array}, pub: Object, priv: Object}></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".encapsulate"><span class="type-signature type-signature-async, static">(async, static) </span>encapsulate<span class="signature">(size, publicKey)</span><span class="type-signature"> &rarr; {Promise.&lt;{key: Object, ciphertext: Object}>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Encapsulates a shared secret for a recipient's public key.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line2156">line 2156</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Security level (512, 768, or 1024).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>publicKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Uint8Array</span>
+|
+
+<span class="param-type">Buffer</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The recipient's public key.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The shared secret and the ciphertext.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;{key: Object, ciphertext: Object}></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".decapsulate"><span class="type-signature type-signature-async, static">(async, static) </span>decapsulate<span class="signature">(size, privateKey, ciphertext)</span><span class="type-signature"> &rarr; {Promise.&lt;Object>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>Decapsulates a ciphertext to recover the shared secret.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line2177">line 2177</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Security level (512, 768, or 1024).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>privateKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Uint8Array</span>
+|
+
+<span class="param-type">Buffer</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The recipient's secret key.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ciphertext</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">Uint8Array</span>
+|
+
+<span class="param-type">Buffer</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The encapsulated secret.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>The recovered shared secret in multiple formats.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Object></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".selfCheck"><span class="type-signature type-signature-async, static">(async, static) </span>selfCheck<span class="signature">(verbose<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise.&lt;boolean>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>KYBER INTEGRITY SHIELD - Known Answer Tests (KATs).
+Performs a self-test by validating byte-lengths, test vectors, and round-trip logic.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line2195">line 2195</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>verbose</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    <code>true</code>
+                
+                </td>
+            
+
+            <td class="description last"><p>Whether to log results to the console.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>True if all security levels pass.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;boolean></span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Thu Apr 02 2026 03:28:11 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

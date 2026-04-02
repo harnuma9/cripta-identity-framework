@@ -1,0 +1,22 @@
+# Ignore development tools
+.gitignore
+.editorconfig
+config.json
+package-lock.json
+TEMP.md
+
+# Ignore other stuff
+.git/
+node_modules/
+docs/
+test/
+media/
+*.gif
+*.png
+*.jpg
+*.jpeg
+
+# Whitelist only the public verification files
+!security/mldsa87_pub.pem
+!security/cif.js.sig
+

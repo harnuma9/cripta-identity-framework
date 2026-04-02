@@ -1,0 +1,18 @@
+# Dependency folders
+node_modules/
+dist/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Private Security Keys
+security/mldsa87_priv.pem
+.env
+
+# Local
+npm-debug.log*
+yarn-error.log*
+config.json
+package-lock.json
+TEMP.md

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Cripta - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Cripta.html">Cripta</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-Cripta-Cripta.html">Cripta</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.toggleAirGap">toggleAirGap</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.help">help</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateCID">generateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateMentalKey">generateMentalKey</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.obfuscateCID">obfuscateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.deobfuscateCID">deobfuscateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.vaultMixCIDs">vaultMixCIDs</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.vaultUnmixCIDs">vaultUnmixCIDs</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.encapsulateCID">encapsulateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.decapsulateCID">decapsulateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.encapsulateAgreedCID">encapsulateAgreedCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.decapsulateAgreedCID">decapsulateAgreedCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateNID">generateNID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateNidQR">generateNidQR</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.recoverOtherCID">recoverOtherCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.recoverPass">recoverPass</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesEncrypt">aesEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesDecrypt">aesDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesStreamEncrypt">aesStreamEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesStreamDecrypt">aesStreamDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaEncrypt">chachaEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaDecrypt">chachaDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaStreamEncrypt">chachaStreamEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaStreamDecrypt">chachaStreamDecrypt</a></li></ul></li><li><a href="Cripta.kyber.html">kyber</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.generate">generate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.encapsulate">encapsulate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.decapsulate">decapsulate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.selfCheck">selfCheck</a></li></ul></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Cripta</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+                <div class="description usertext"><p>A high-integrity identity and cryptographic framework providing
+Deterministic secret derivation, Anti-Forensic steganography, Post-Quantum (ML-KEM)
+key encapsulation for Shared Root of Trust Beyond Establishing Secure Messaging,
+KeyLess Authenticated Encryption Mode (KLAEM), and Multi-chain wallet generation.</p>
+<p>LICENSE TERMS:
+This software is licensed under the Business Source License 1.1.</p>
+<ul>
+<li>Non-commercial use is permitted.</li>
+<li>Commercial use in a production environment is strictly prohibited
+without a separate commercial agreement from the author.</li>
+<li>This license will eventually convert to Apache License 2.0 on 2030-03-21.</li>
+</ul>
+<p>NOTE: This header is part of the signed payload. Altering these
+comments will invalidate the ML-DSA-87 integrity check.</p></div>
+            
+
+            
+                
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>A high-integrity identity and cryptographic framework providing
+Deterministic secret derivation, Anti-Forensic steganography, Post-Quantum (ML-KEM)
+key encapsulation for Shared Root of Trust Beyond Establishing Secure Messaging,
+KeyLess Authenticated Encryption Mode (KLAEM), and Multi-chain wallet generation.</p>
+<p>LICENSE TERMS:
+This software is licensed under the Business Source License 1.1.</p>
+<ul>
+<li>Non-commercial use is permitted.</li>
+<li>Commercial use in a production environment is strictly prohibited
+without a separate commercial agreement from the author.</li>
+<li>This license will eventually convert to Apache License 2.0 on 2030-03-21.</li>
+</ul>
+<p>NOTE: This header is part of the signed payload. Altering these
+comments will invalidate the ML-DSA-87 integrity check.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line2">line 2</a>
+    </li></ul></dd>
+    
+
+    
+    <dt class="tag-version">Version:</dt>
+    <dd class="tag-version"><ul class="dummy"><li>1.0.2</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Aries Harbinger</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+    <dt class="tag-license">License:</dt>
+    <dd class="tag-license"><ul class="dummy"><li>BUSL-1.1 (Business Source License 1.1)</li></ul></dd>
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://github.com/harnuma9/cripta-identity-framework">https://github.com/harnuma9/cripta-identity-framework</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+        <h3 class="subsection-title">Namespaces</h3>
+
+        <dl>
+            <dt><a href="module-Cripta-Cripta.html">Cripta</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="~ML-KEMMODE"><span class="type-signature type-signature-inner">(inner) </span>ML-KEM MODE<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>ESTABLISH SHARED ROOT OF TRUST BEYOND ESTABLISHING SECURE MESSAGING THRU ENCAPSULATION PROTOCOLS.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line1459">line 1459</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>ESTABLISH SHARED ROOT OF TRUST BEYOND ESTABLISHING SECURE MESSAGING THRU ENCAPSULATION PROTOCOLS.</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~AES_Wrappers"><span class="type-signature type-signature-inner">(inner) </span>AES_Wrappers<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>AES-256-GCM encryption suite for buffers and files.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line1921">line 1921</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>AES-256-GCM encryption suite for buffers and files.</p>
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="~ChaCha_Wrappers"><span class="type-signature type-signature-inner">(inner) </span>ChaCha_Wrappers<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+    
+    <dt class="tag-description">Description:</dt>
+    <dd class="tag-description"><ul class="dummy"><li><p>ChaCha20-Poly1305 suite. Follows the same security requirements as AES.</p></li></ul></dd>
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="cif.js.html">cif.js</a>, <a href="cif.js.html#line1978">line 1978</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    <p>ChaCha20-Poly1305 suite. Follows the same security requirements as AES.</p>
+</div>
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Thu Apr 02 2026 03:28:10 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

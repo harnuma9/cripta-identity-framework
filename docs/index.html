@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Cripta.html">Cripta</a></li></ul><h3>Namespaces</h3><ul><li><a href="module-Cripta-Cripta.html">Cripta</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.toggleAirGap">toggleAirGap</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.help">help</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateCID">generateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateMentalKey">generateMentalKey</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.obfuscateCID">obfuscateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.deobfuscateCID">deobfuscateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.vaultMixCIDs">vaultMixCIDs</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.vaultUnmixCIDs">vaultUnmixCIDs</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.encapsulateCID">encapsulateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.decapsulateCID">decapsulateCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.encapsulateAgreedCID">encapsulateAgreedCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.decapsulateAgreedCID">decapsulateAgreedCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateNID">generateNID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.generateNidQR">generateNidQR</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.recoverOtherCID">recoverOtherCID</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.recoverPass">recoverPass</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesEncrypt">aesEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesDecrypt">aesDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesStreamEncrypt">aesStreamEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.aesStreamDecrypt">aesStreamDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaEncrypt">chachaEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaDecrypt">chachaDecrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaStreamEncrypt">chachaStreamEncrypt</a></li><li data-type='method' style='display: none;'><a href="module-Cripta-Cripta.html#.chachaStreamDecrypt">chachaStreamDecrypt</a></li></ul></li><li><a href="Cripta.kyber.html">kyber</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.generate">generate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.encapsulate">encapsulate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.decapsulate">decapsulate</a></li><li data-type='method' style='display: none;'><a href="Cripta.kyber.html#.selfCheck">selfCheck</a></li></ul></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><div align="center">
+<img src="https://raw.githubusercontent.com/harnuma9/cripta-identity-framework/refs/heads/main/media/banner.gif" alt="Banner" width="1250">
+<h1>Cripta Identity Framework (CIF)</h1>
+<p><a href="https://csrc.nist.gov/pubs/fips/203/final"><img src="https://img.shields.io/badge/Post--Quantum-ML--KEM-blueviolet?style=for-the-badge" alt="Post-Quantum: ML-KEM"></a>
+<a href="#-why-choose-cif"><img src="https://img.shields.io/badge/Security-Stateless-success?style=for-the-badge&amp;logo=securityscorecard&amp;logoColor=white" alt="Security: Stateless"></a>
+<a href="#-current-status--collaboration"><img src="https://img.shields.io/badge/Status-Experimental_Stable-orange?style=for-the-badge" alt="Status: Experimental"></a></p>
+<p><a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-v24+-6cc24a?style=for-the-badge&amp;logo=node.js" alt="Node Version"></a>
+<a href="https://www.npmjs.com/package/@stless/cif"><img src="https://img.shields.io/npm/v/@stless/cif?style=for-the-badge&amp;logo=npm&amp;color=CB3837" alt="NPM Version"></a>
+<a href="https://www.npmjs.com/package/@stless/cif"><img src="https://img.shields.io/npm/dm/@stless/cif?style=for-the-badge&amp;color=0052FF" alt="NPM Downloads"></a></p>
+<p align="center">
+<strong>A high-integrity identity and cryptographic framework providing deterministic secret derivation, anti-forensic steganography, and post-quantum (ML-KEM) key encapsulation for a “Shared Root of Trust”.</strong>
+</p>
+</div>
+<br />
+<p>Instead of managing multiple apps or writing down passwords in paper and then someone would probably find that out and peek a little 👀, you generate everything you need in just one tap. (Apologies... we don’t have an app yet 😓)</p>
+<br />
+<p>CIF extends beyond stateless generator to provide KeyLess Authenticated Encryption Mode (KLAEM) and <strong>multi-chain wallet generation</strong>.</p>
+<p>Possibly, the first ever <strong>“Unified Identity Framework”</strong> that is format-agnostic, enabling deterministic derivation of any cryptographic primitive from a single entropy source.</p>
+<br />
+<br />
+<hr>
+<h2>✨ The Derivation Engine</h2>
+<h3><strong>Raw &amp; Encoded Data</strong></h3>
+<p><img src="https://img.shields.io/badge/Raw_Bytes-000000?style=for-the-badge&amp;logo=generic" alt="Binary"> <img src="https://img.shields.io/badge/Hex_String-444444?style=for-the-badge" alt="Hex"> <img src="https://img.shields.io/badge/Base64-666666?style=for-the-badge" alt="Base64"> <img src="https://img.shields.io/badge/Base58-888888?style=for-the-badge" alt="Base58"></p>
+<h3><strong>Human-Readable Secrets</strong></h3>
+<p><img src="https://img.shields.io/badge/A--Z_Only-0052FF?style=for-the-badge" alt="Letters"> <img src="https://img.shields.io/badge/Numeric_PIN-0052FF?style=for-the-badge" alt="Numeric"> <img src="https://img.shields.io/badge/Complex_Password-0052FF?style=for-the-badge" alt="Passwords"> <img src="https://img.shields.io/badge/Mnemonic_Phrases-0052FF?style=for-the-badge" alt="Mnemonics"></p>
+<h3><strong>Sovereign Assets (Web3)</strong></h3>
+<p><img src="https://img.shields.io/badge/BIP39-gray?style=for-the-badge" alt="BIP39"> <img src="https://img.shields.io/badge/Bitcoin_WIF-F7931A?style=for-the-badge&amp;logo=bitcoin&amp;logoColor=white" alt="Bitcoin"> <img src="https://img.shields.io/badge/EVM_Chains-3C3C3D?style=for-the-badge&amp;logo=ethereum&amp;logoColor=white" alt="EVM"> <img src="https://img.shields.io/badge/Solana-14F195?style=for-the-badge&amp;logo=solana&amp;logoColor=black" alt="Solana"> <img src="https://img.shields.io/badge/Tron_TRX-FF0013?style=for-the-badge&amp;logo=tron&amp;logoColor=white" alt="Tron"> <img src="https://img.shields.io/badge/Monero_XMR-FF6600?style=for-the-badge&amp;logo=monero&amp;logoColor=white" alt="Monero"> <img src="https://img.shields.io/badge/Polkadot-E6007A?style=for-the-badge&amp;logo=polkadot&amp;logoColor=white" alt="Polkadot"> <img src="https://img.shields.io/badge/Cardano-0033AD?style=for-the-badge&amp;logo=cardano&amp;logoColor=white" alt="Cardano"> <img src="https://img.shields.io/badge/Algorand-000000?style=for-the-badge&amp;logo=algorand&amp;logoColor=white" alt="Algorand"> <img src="https://img.shields.io/badge/Stellar-7D00FF?style=for-the-badge&amp;logo=stellar&amp;logoColor=white" alt="Stellar"> <img src="https://img.shields.io/badge/Near-000000?style=for-the-badge&amp;logo=near&amp;logoColor=white" alt="Near"> <img src="https://img.shields.io/badge/Aptos-000000?style=for-the-badge&amp;logo=aptos&amp;logoColor=white" alt="Aptos"> <img src="https://img.shields.io/badge/Sui-4DA2FF?style=for-the-badge&amp;logo=sui&amp;logoColor=white" alt="Sui"></p>
+<h3><strong>Privacy Communication</strong></h3>
+<p><img src="https://img.shields.io/badge/Session_Messenger-57D57B?style=for-the-badge&amp;logo=session&amp;logoColor=white" alt="Session"></p>
+<br />
+<br />
+<hr>
+<h2>🚀 Key Features</h2>
+<ul>
+<li><strong>Deterministic Derivation:</strong> Derive BTC, ETH, XMR, and 10+ other chains from one CID.</li>
+<li><strong>Authenticated Encryption:</strong> KeyLess Mode (KLAEM) using <strong>AES-256-GCM</strong> and <strong>ChaCha20-Poly1305</strong>.</li>
+<li><strong>Post-Quantum Security:</strong> Shared Root of Trust established via <strong>ML-KEM-512</strong>, <strong>ML-KEM-768</strong>, and <strong>ML-KEM-1024</strong>.</li>
+<li><strong>Optimization:</strong> Supports <strong>CIF-lite</strong>, a tactical profile designed for resource-constrained environments.</li>
+</ul>
+<br />
+<br />
+<hr>
+<h2>📊 RESOURCE ALLOCATION MATRIX</h2>
+<br />
+<h3>STANDARD &amp; SOVEREIGN TIERS</h3>
+<p><em>(Full Mode: t=3, p=4)</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">CID Type (Bits)</th>
+<th style="text-align:left">m (KiB)</th>
+<th style="text-align:left">m (MiB)</th>
+<th style="text-align:left">Total Bytes</th>
+<th style="text-align:left">Security Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>256</strong> (17 words)</td>
+<td style="text-align:left">65,536</td>
+<td style="text-align:left">64</td>
+<td style="text-align:left">32,768</td>
+<td style="text-align:left">Standard Sovereign</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>384</strong> (25 words)</td>
+<td style="text-align:left">98,304</td>
+<td style="text-align:left">96</td>
+<td style="text-align:left">49,152</td>
+<td style="text-align:left">High-Value Cold</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>512</strong> (33 words)</td>
+<td style="text-align:left">131,072</td>
+<td style="text-align:left">128</td>
+<td style="text-align:left">65,536</td>
+<td style="text-align:left">Institutional/Paranoid</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>obfuscateCID</strong></td>
+<td style="text-align:left">262,144</td>
+<td style="text-align:left">256</td>
+<td style="text-align:left">131,072</td>
+<td style="text-align:left">The &quot;Heavy&quot; Shield</td>
+</tr>
+</tbody>
+</table>
+<br />
+<h3>TACTICAL &amp; MOBILE TIER</h3>
+<p><em>(Lite Mode: t=2, p=1)</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">CID Type (Bits)</th>
+<th style="text-align:left">m (KiB)</th>
+<th style="text-align:left">m (MiB)</th>
+<th style="text-align:left">Total Bytes</th>
+<th style="text-align:left">Security Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Lite</strong> (256-bit)</td>
+<td style="text-align:left">32,768</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">4,096</td>
+<td style="text-align:left">Tactical/Mobile</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note on Formulas:</strong></p>
+<ul>
+<li><strong>Memory (KiB):</strong> (Bytes * 2) * 1024</li>
+<li><strong>Tag Length:</strong> Memory * 0.5</li>
+</ul>
+</blockquote>
+<br />
+<br />
+<h2>Installation</h2>
+<pre class="prettyprint source lang-bash"><code>npm install @stless/cif
+</code></pre>
+<br />
+<h2>Usage</h2>
+<h3>1. The Foundation: Identity &amp; Derivation</h3>
+<p>Generate a unique <strong>Cryptographic ID (CID)</strong> and derive deterministic secrets using a <strong>Nonce ID (NID)</strong> and your <strong>PIN</strong>.</p>
+<pre class="prettyprint source lang-javascript"><code>const Cripta = require('@stless/cif');
+
+// Enable AirGap Mode (Stateless, no-network profile)
+await Cripta.toggleAirGap(true);
+
+// Generate a 256-bit Identity (Mnemonic + TV Code)
+const { tvCode, mnemonic: cid } = await Cripta.generateCID(256);
+
+// Create a Nonce ID (The 'Map' to your specific secret/wallet)
+const nid = await Cripta.generateNID('My-xmr-wallet#01', 'X', 32);
+
+// Recover the deterministic secret (e.g., 25-word Monero seed)
+const secretXmr = await Cripta.recoverPass(cid, nid, '837492057164');
+
+// Optional bait PIN that derives decoy wallet seed with small funds
+const decoyXmr = await Cripta.recoverPass(cid, nid, '2026');
+</code></pre>
+<br />
+<h3>2. KLAEM Mode (KeyLess Authenticated Encryption)</h3>
+<p>Perform encryption without storing traditional keys. Use <code>obscureMode</code> to encrypt the nonces and authentication tags themselves.</p>
+<h3>Message Mode (Buffer/String)</h3>
+<p>Ideal for small data, short notes, or cryptographic fragments.</p>
+<pre class="prettyprint source lang-javascript"><code>const message = &quot;> Sensitive Data&quot;;
+
+// AES-256-GCM
+const aesCipher = await Cripta.aesEncrypt(cid, nid1, pin, { data: message });
+const aesPlain  = await Cripta.aesDecrypt(cid, nid1, pin, { data: aesCipher });
+
+// ChaCha20-Poly1305 with Stealth Obfuscation
+const chaCipher = await Cripta.chachaEncrypt(cid, nid2, pin, { 
+  data: message, 
+  obscureMode: true // Stealth metadata
+});
+const chaPlain  = await Cripta.chachaDecrypt(cid, nid2, pin, { 
+  data: chaCipher, 
+  obscureMode: true 
+});
+</code></pre>
+<h3>Stream Mode (Large Files)</h3>
+<p>Process GB-scale files efficiently using Node.js streams. Source and destination paths are handled automatically.</p>
+<pre class="prettyprint source lang-javascript"><code>const options = { 
+  inputPath: './secret.iso', 
+  outputPath: './secret.cif', 
+  obscureMode: true 
+};
+
+// AES-256-GCM Streaming
+await Cripta.aesStreamEncrypt(cid, nid1, pin, options);
+await Cripta.aesStreamDecrypt(cid, nid1, pin, { ...options, inputPath: './secret.cif', outputPath: './recovered.iso' });
+
+// ChaCha20-Poly1305 Streaming
+await Cripta.chachaStreamEncrypt(cid, nid2, pin, options);
+await Cripta.chachaStreamDecrypt(cid, nid2, pin, { ...options, inputPath: './secret.cif', outputPath: './recovered.iso' });
+</code></pre>
+<br />
+<h3>3. Post-Quantum Handshake (ML-KEM)</h3>
+<p>Native support for <strong>NIST FIPS 203 (Kyber)</strong> for P2P key encapsulation.</p>
+<pre class="prettyprint source lang-javascript"><code>// Generate Kyber-768 Keypair
+const bobKeys = await Cripta.kyber.generate(768);
+
+// Alice Encapsulates CID for Bob (Format-agnostic)
+const aliceEncapped = await Cripta.encapsulateCID(768, bobKeys.pub.hex, true);
+
+// Bob Decapsulates to reach the Shared Root of Trust
+const bobDecapped = await Cripta.decapsulateCID(768, bobKeys.priv.base64, aliceEncapped.ciphertext.base58);
+</code></pre>
+<br />
+<h3>4. Identity Obfuscation (The Mental Key)</h3>
+<p>Scramble your Master CID into a 9-word mnemonic plus two fragments. This requires a 128-bit &quot;Mental Key&quot; and an optional salt to derive.</p>
+<pre class="prettyprint source lang-javascript"><code>// Generate an 8-word Mental Key (128-bit)
+const mentalKey = await Cripta.generateMentalKey();
+
+// [OPTIONAL] A unique, long passphrase (salt) to prevent rainbow table attacks.
+// This should be a lowercased sentence or string known only to you.
+const saltObf = 'your-secret-personal-passphrase-here';
+
+// (For Physical Storage)
+// Obfuscate CID: Returns 9-word mnemonic + two scrambled fragments
+const { mnemonic9, scrambled1, scrambled2 } = await Cripta.obfuscateCID(cid, mentalKey, saltObf);
+
+// Recovery: Reconstruct the original CID
+const recovered = await Cripta.deobfuscateCID(mnemonic9, scrambled1, scrambled2, saltObf);
+
+// (For Cloud Storage)
+// Scramble real CID among 20 decoys
+const { mnemonic9: vaultMn, splitCIDs } = await Cripta.vaultMixCIDs(cid, mentalKey, 20);
+
+// Unscramble to recover the legitimate Identity
+const realIdentity = await Cripta.vaultUnmixCIDs(vaultMn, splitCIDs);
+</code></pre>
+<br />
+<h3>5. Format Interoperability &amp; QR Delivery</h3>
+<p>Seamlessly switch between TV-Codes and Mnemonics, or export Nonce IDs for physical air-gap scanning.</p>
+<pre class="prettyprint source lang-javascript"><code>// Format Recovery: Returns full format regardless of TV-Code and Mnemonic formats
+const fromTV = await Cripta.recoverOtherCID(tvCode);
+const fromMn = await Cripta.recoverOtherCID(cid);
+
+// Physical Handover: Render a Nonce ID as a terminal-ready QR Code
+const terminalQR = await Cripta.generateNidQR(nid, { format: 'terminal' });
+console.log(terminalQR);
+</code></pre>
+<br />
+<blockquote>
+<h3>⚠️ <strong>CRITICAL: Implementation Risk</strong></h3>
+<p>Using private internal functions carries a <strong>high risk</strong> due to automatic buffer-zeroing.
+<strong>Always</strong> wrap reused input buffers in <code>Buffer.from()</code> to prevent data loss.</p>
+</blockquote>
+<br />
+<br />
+<hr>
+<br />
+<div align="center">
+<h2>💚 Support the Future of Security</h2>
+<p>If this framework helps mitigate your professional liability or secures your digital life, consider supporting its continued development.</p>
+<br />
+<p><a href="https://github.com/harnuma9/cripta-identity-framework#-support-the-future-of-security"><img src="https://img.shields.io/badge/PROCEED_TO_DONATIONS-2ea44f?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Support CIF"></a></p>
+<br />
+<p><em>(Clicking the button above redirects you to our verified Crypto addresses on GitHub)</em></p>
+</div>
+<br />
+<br />
+<hr>
+<br />
+<h3>📜 Credits &amp; Legal</h3>
+<ul>
+<li><strong>Wordlist:</strong> 2<sup>16</sup> density English corpus curated by the Yahoo End-to-End security team.</li>
+<li><strong>License:</strong> Licensed under <strong>BUSL-1.1</strong> until 2030-03-21, converting to <strong>Apache-2.0</strong> thereafter.</li>
+</ul>
+<br />
+<br />
+<br />
+<br /></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Thu Apr 02 2026 03:28:10 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>
