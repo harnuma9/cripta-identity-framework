@@ -1,0 +1,31 @@
+name: CIF-Integrity-Pipeline
+
+on: [push, pull_request]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  integrity-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run OpenSSL Signature Verification
+        run: |
+          openssl pkeyutl -verify -pubin \
+            -inkey security/mldsa87_pub.pem \
+            -sigfile security/cif.js.sig \
+            -in lib/cif.js
+
+      - name: Run Internal Verify Script
+        run: npm run verify
