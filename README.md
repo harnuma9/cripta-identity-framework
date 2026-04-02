@@ -15,6 +15,10 @@
 [![Fork](https://img.shields.io/github/forks/harnuma9/cripta-identity-framework?style=for-the-badge&color=00FFFF)](https://github.com/harnuma9/cripta-identity-framework/fork)
 [![Issues](https://img.shields.io/github/issues/harnuma9/cripta-identity-framework?style=for-the-badge&color=red)](https://github.com/harnuma9/cripta-identity-framework/issues)
 
+[![Integrity Check](https://github.com/harnuma9/cripta-identity-framework/actions/workflows/pipeline.yml/badge.svg)](https://github.com/harnuma9/cripta-identity-framework/actions)
+
+<br />
+
 <p align="center">
 <strong>A high-integrity identity and cryptographic framework providing deterministic secret derivation, anti-forensic steganography, and post-quantum (ML-KEM) key encapsulation for a “Shared Root of Trust”.</strong>
 </p>
