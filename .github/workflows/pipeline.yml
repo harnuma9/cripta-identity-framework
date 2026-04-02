@@ -12,11 +12,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Upgrade OpenSSL to 3.5+
+      - name: Build OpenSSL 3.5.0 (ML-DSA Support)
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential checkinstall zlib1g-dev
-          curl -O https://www.openssl.org/source/openssl-3.5.0.tar.gz
+          sudo apt-get install -y build-essential zlib1g-dev
+          curl -L -o openssl-3.5.0.tar.gz https://github.com/openssl/openssl/releases/download/openssl-3.5.0/openssl-3.5.0.tar.gz
           tar -zxf openssl-3.5.0.tar.gz
           cd openssl-3.5.0
           ./config --prefix=/usr/local/ssl --openssldir=/usr/local/ssl shared zlib
@@ -31,12 +31,13 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Install Dependencies
+      - name: Install NPM Dependencies
         run: npm install
 
-      - name: Execute ML-DSA Integrity Shield
+      - name: Run ML-DSA Integrity Shield
         run: |
-          /usr/local/ssl/bin/openssl pkeyutl -verify -pubin \
+          openssl version
+          openssl pkeyutl -verify -pubin \
             -inkey security/mldsa87_pub.pem \
             -sigfile security/cif.js.sig \
             -in lib/cif.js
