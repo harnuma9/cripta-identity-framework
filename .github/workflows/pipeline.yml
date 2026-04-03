@@ -1,6 +1,22 @@
 name: CIF-Integrity-Pipeline
 
-on: [push, pull_request]
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+      - 'media/**'
+      - 'README.md'
+      - 'SECURITY.md'
+      - 'TEMP.md'
+      - 'LICENSE'
+      - '.gitignore'
+      - '.nomedia'
+      - '.npmignore'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'media/**'
+      - 'README.md'
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
