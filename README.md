@@ -488,6 +488,14 @@ The tool itself is neutral; the intent defines the outcome. This framework was b
 
 ---
 
+<br />
+
+<div align="center">
+  <img src="./media/stless.png" alt="STLess banner" width="1250">
+</div>
+
+<br />
+
 ## Our Vision
 
 We are aiming for privacy-focused app, as well as following as close as possible to the natural ways humans seek the path of least resistance, or as they called it “convenience”, “laziness”, or “efficiency”, but this same drive is **exactly why security becomes a nightmare**.
