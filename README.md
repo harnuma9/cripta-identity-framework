@@ -43,6 +43,41 @@ Possibly, the first ever **“Unified Identity Framework”** that is format-agn
 
 ---
 
+## 🟢 **Update V2: THE TOTAL ARCHITECTURAL RESET**
+
+</br>
+
+<div align="center">
+
+⛔⛔⛔
+
+**DON’T TOUCH THAT CODE!!!** 😬
+
+⛔⛔⛔
+
+</div>
+
+<br />
+
+Starting this April 2026, we are officially initiating a **ground-up rewrite** of the **Cripta Identity Framework (@stless/cif)**. Version 1 was the foundation; Version 2 is the new modern standard. 
+
+We are gutting the engine and replacing it with a **Universal Deterministic Namespace**. No more legacy strings. No more predictable patterns. No more visual ambiguity. 
+
+* **Status:** Active Re-engineering.
+* **Philosophy:** "Trust the Math, not the Label."
+* **Impact:** Breaking changes. V1 will be deprecated.
+* **Flexibility:** Endless derivation possibilities.
+* **Efficiency:** From overkill paranoia to everyday convenience.
+
+<br />
+
+> **"The framework you knew is being buried. What replaces it is a Protocol."**
+
+<br />
+<br />
+
+---
+
 ## 📖 Table of Contents
 * [Why Choose This?](#-why-choose-cif)
 * [What It Can Derive?](#-the-derivation-engine)
